@@ -1,0 +1,185 @@
+html {
+    scroll-padding-top: 70px;
+}
+
+body {
+    font-family: monospace;
+    margin: 0;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: rgb(19, 38, 246);
+    box-shadow:
+        inset 250px 0 200px rgba(0, 0, 0, 0.848), 
+        inset -250px 0 200px rgba(0, 0, 0, 0.848); 
+}
+
+.nav-bar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(15, 15, 15);
+}
+
+.nav-bar li {
+    float: left;
+    font-size: 20px;
+}
+
+.nav-bar li a {
+    float: left;
+    display: block;
+    padding: 16px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#item-menu a:hover {
+    background-color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px rgb(139, 226, 250);
+}
+
+#item-menu a:active {
+    color: rgb(0, 0, 0)
+}
+
+.contenedor-vertical-centro {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor-vertical-izq {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.avatar {
+    max-width: 50%;
+    padding: 0;
+    margin-top: 100px;
+    filter: drop-shadow(16px 16px 20px blue);
+    z-index: -1;
+}
+ 
+.informacion {
+    color: rgb(169, 214, 253);
+}
+
+#nombre {
+    color: rgb(3, 3, 3);
+    text-shadow: 3px 3px 5px rgb(139, 226, 250);
+}
+
+p {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+    color: rgb(3, 3, 3);
+    text-shadow: 3px 2px 3px rgb(139, 226, 250);
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 3px rgb(0, 0, 0)
+}
+
+.detalle-estudios {
+    padding-right: 40px;
+    font-size: 25px;
+    list-style: none;
+}
+
+.detalle-estudios li::before {
+    padding: .5em;
+    content: "📖";
+}
+
+.detalle-estudios li {
+    padding: .3em;
+    margin-right: .5em;
+}
+
+.detalle-experiencia-laboral {
+    padding-right: 40px;
+    font-size: 25px;
+    list-style: none;
+}
+
+.detalle-experiencia-laboral li::before {
+    padding: .5em;
+    content: "👩‍💼";
+}
+
+.detalle-experiencia-laboral li {
+    padding: .3em;
+    margin-right: .5em;
+}
+
+#skills ul {
+    font-size: 25px;
+    list-style: none;
+}
+
+#skills ul li {
+    word-spacing: 10px;
+    margin: 15px;
+}
+
+#skills ul li::before {
+    padding: .5em;
+}
+
+#digitales::before {
+    content: "💻";
+}
+
+#idiomas::before {
+    content: "🇺🇸";
+}
+
+#arte::before {
+    content: "🖌";
+}
+
+.right {
+    margin-left: 30px;
+    float: right;
+}
+
+.left {
+    margin-right: 30px;
+    float: left;
+}
+
+i.fas {
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 5px;
+    padding: 0.5em 0.6em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
