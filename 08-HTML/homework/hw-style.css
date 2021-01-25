@@ -1,0 +1,86 @@
+body {
+    height: auto;
+    margin: 0px;
+    padding: 20px;
+    box-shadow:
+        inset 250px 0 200px rgba(245, 220, 108, 0.848), 
+        inset -250px 0 200px rgba(245, 220, 108, 0.848); 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("img/hw-background.jpg");
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    color: rgb(123, 2, 2);
+    letter-spacing: 0.15em;
+}
+h3 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(171, 40, 40);
+}
+h4 {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(174, 90, 90);
+}
+img {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 400px;
+    border-radius: 10%;
+}
+a {
+    color: rgb(123, 2, 2);
+}
+a:hover {
+    color: rgb(174, 90, 90);
+}
+.divClass {
+    width: 650px;
+}
+.contenedor-vertical {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.758);
+}
+#thirdDiv {
+    height: auto;
+    width: 500px;
+    background-color: rgb(255, 217, 155);
+    padding: 50px;
+    margin: 50px;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(123, 2, 2);
+    border-radius: 2%;
+}
+#spanId {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+ul {
+    list-style: none;
+}
+li:before {                
+    content: "\27A5";
+    font-size: large;
+    color:  rgb(123, 2, 2); 
+    margin-right: .5em;
+}
+li {
+    padding: .2em;
+}
