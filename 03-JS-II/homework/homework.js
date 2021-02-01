@@ -140,14 +140,19 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero == 0 || numero == 1)
-    return false;
+  var esPrimo = true;
+  var i = 2;
 
-  for (var i = 2; i < numero; i++) {
-    if (numero % i === 0) return false;
+  if (numero === 0 || numero === 1)
+    esPrimo = false;
+
+  while (i < numero && esPrimo) {
+    if (numero % i === 0)
+      esPrimo = false;
+    i++;
   }
 
-  return true;
+  return esPrimo;
 }
 
 function esVerdadero(valor){
@@ -163,7 +168,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí       
   var resultados = []
-  for (var i = 0; i < 11; i++) {
+  for (var i = 0; i <= 10; i++) {
     resultados.push(6 * i)
   }
   return resultados
@@ -179,11 +184,10 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var contador = 0;
+  var limite = numero + 35;
   do {
     numero += 5;
-    contador++;
-  } while (contador < 8);
+  } while (numero <= limite);
   return numero;
 }
 

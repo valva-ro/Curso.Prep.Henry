@@ -81,10 +81,9 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
-  var numeroStr = numero.toString();
   var resultado = "No es capicua";
 
-  if (numeroStr.split("").reverse().join("") === numeroStr) 
+  if (numeroStr.split("").reverse().join("") === numero.toString()) 
     resultado = "Es capicua";
   
   return resultado;
@@ -111,7 +110,7 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
-  return arr.sort(function(a, b){return a.length - b.length});
+  return arr.sort(function(a, b) { return a.length - b.length });
 }
 
 
